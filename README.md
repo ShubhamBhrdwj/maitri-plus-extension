@@ -25,7 +25,8 @@
 2. Click **Code → Download ZIP**
 3. Extract the ZIP file
 
-<img width="507" height="431" alt="step1" src="https://github.com/user-attachments/assets/218455a8-6da5-4363-ab81-eecb6666112c" />
+<img width="507" height="431" alt="1" src="https://github.com/user-attachments/assets/9d78130d-633a-4ffe-b469-17e270df212d" />
+
 
 
 ---
@@ -39,7 +40,8 @@
    ```
 3. Press **Enter**
 
-<img width="1417" height="297" alt="step2" src="https://github.com/user-attachments/assets/30d66c02-2155-4e58-aa98-55da094fe512" />
+<img width="1338" height="122" alt="3" src="https://github.com/user-attachments/assets/6efed240-33b9-45cc-ad0d-5f46d666e77c" />
+
 
 
 ---
@@ -48,8 +50,9 @@
 
 1. Look at the **top-right corner**
 2. Turn **Developer mode** ON
+   
+<img width="1417" height="297" alt="2" src="https://github.com/user-attachments/assets/7ea146c2-21d4-48c1-afa0-e4bdcc1efb8c" />
 
-<img width="1338" height="122" alt="step3" src="https://github.com/user-attachments/assets/42c27f89-5f17-40e4-8ebc-50b2bde71c47" />
 
 
 ---
@@ -61,7 +64,8 @@
    - The folder **must contain `manifest.json`**
 3. Click **Select Folder**
 
-<img width="1452" height="513" alt="step4" src="https://github.com/user-attachments/assets/3a646156-b40e-4c39-8555-969d9ce0c96f" />
+<img width="1452" height="513" alt="4" src="https://github.com/user-attachments/assets/52dbb6b1-9d49-4f73-86b5-9fc9d79dbd2a" />
+
 
 
 ---
@@ -74,7 +78,8 @@
    - Auto-detect your session
    - Accessible via the floating **Maitri+** button
 
-<img width="1452" height="513" alt="step5" src="https://github.com/user-attachments/assets/18b6126f-e47f-4e04-99a3-5a299291a7ed" />
+<img width="172" height="91" alt="image" src="https://github.com/user-attachments/assets/b0ce51ea-ba40-4400-83a1-e5cb6831442b" />
+
 
 
 ---
@@ -93,7 +98,8 @@ When a new version is released:
    
 5. Click **Reload** on Maitri+
 
-    <img width="512" height="277" alt="step45" src="https://github.com/user-attachments/assets/4431966d-7359-4e5f-aa66-8db5bee733c9" />
+<img width="512" height="277" alt="6" src="https://github.com/user-attachments/assets/2a2de8f5-b119-467b-9873-a8f1e6826086" />
+
 
 ---
 
