@@ -1,0 +1,373 @@
+/* =========================================================
+   Maitri+ Overlay & App Container
+========================================================= */
+
+/* ---------- Overlay ---------- */
+#mp-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 25, 0.88);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- App ---------- */
+#mp-app {
+  width: min(1200px, 95vw);
+  height: min(90vh, 900px);
+  background: #121421;
+  color: #e0e0e0;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 40px 120px rgba(0,0,0,.6);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+
+/* =========================================================
+   Header
+========================================================= */
+
+.mp-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: linear-gradient(180deg, #0f1224, #121421);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* ---------- Header Left ---------- */
+.mp-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.mp-brand h1 {
+  margin: 0;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.mp-brand span {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* ---------- Social Icons ---------- */
+.mp-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.mp-socials a {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mp-socials a:hover {
+  color: #4d52ff;
+  transform: translateY(-1px);
+}
+
+.mp-socials svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ---------- Header Right ---------- */
+.mp-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mp-user {
+  text-align: right;
+}
+
+#mp-name {
+  font-weight: 600;
+}
+
+#mp-roll {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ---------- Close Button ---------- */
+#mp-close {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+#mp-close:hover {
+  color: #ff6b6b;
+}
+
+
+/* =========================================================
+   Controls
+========================================================= */
+
+.mp-controls {
+  display: flex;
+  gap: 20px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #242754;
+}
+
+.mp-select,
+.mp-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mp-controls label {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.mp-controls select,
+.mp-controls input {
+  background: #1c1e3a;
+  border: 1px solid #2a2d55;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  min-width: 140px;
+}
+
+
+/* =========================================================
+   Subject Grid & Cards
+========================================================= */
+
+.mp-subjects {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+  overflow-y: auto;
+}
+
+/* ---------- Card ---------- */
+.mp-card {
+  background: #1c1e3a;
+  border-radius: 14px;
+  padding: 18px;
+  cursor: pointer;
+  position: relative;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.mp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.35);
+}
+
+/* ---------- Risk Accent ---------- */
+.mp-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 14px 0 0 14px;
+}
+
+.mp-card.safe::before   { background: #5fbdb0; }
+.mp-card.warn::before   { background: #ffd580; }
+.mp-card.danger::before { background: #f07167; }
+
+/* ---------- Card Head ---------- */
+.mp-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mp-code {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.mp-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.mp-att {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ---------- Card Meta ---------- */
+.mp-card-meta {
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   Expand / Simulation / Marks
+========================================================= */
+
+.mp-expand {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #2a2d55;
+  animation: expand .25s ease;
+}
+
+@keyframes expand {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mp-sim {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.mp-mark-card {
+  background: #121421;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.mp-overall {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   Insight / Correlation
+========================================================= */
+
+.mp-insight {
+  margin: 10px 0 14px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.04);
+  border-left: 4px solid #4d52ff;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mp-marks-pct {
+  margin-left: 6px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+
+/* =========================================================
+   Navigation / Pages
+========================================================= */
+
+.mp-page { display: none; }
+.mp-page.active { display: block; }
+
+.mp-nav {
+  display: flex;
+  border-bottom: 1px solid #242754;
+}
+
+.mp-tab {
+  background: none;
+  border: none;
+  color: #aaa;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+.mp-tab.active {
+  color: #fff;
+  border-bottom: 2px solid #4d52ff;
+}
+
+
+/* =========================================================
+   Footer (Sticky)
+========================================================= */
+
+.mp-footer {
+  margin-top: auto;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 20, 33, 0.95),
+    rgba(18, 20, 33, 1)
+  );
+  font-size: 12px;
+  color: #aaa;
+}
+
+.mp-footer .mp-socials {
+  display: flex;
+  gap: 14px;
+}
+
+
+/* =========================================================
+   Floating Action Button
+========================================================= */
+
+#mp-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483647;
+  background: linear-gradient(135deg, #4d52ff, #00aeef);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 22px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+#mp-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.55);
+}
+
+#mp-fab:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}

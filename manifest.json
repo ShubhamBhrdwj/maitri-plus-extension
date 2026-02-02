@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Maitri+",
+  "version": "1.0.0",
+  "description": "Advanced attendance & marks dashboard for Maitri",
+  "permissions": [],
+  "host_permissions": [
+    "https://maitri.bmu.edu.in/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://maitri.bmu.edu.in/*"],
+      "js": ["inject.js"],
+      "css": ["dashboard.css"],
+      "run_at": "document_idle"
+    }  
+  ],
+"web_accessible_resources": [
+  {
+    "resources": ["icons/*"],
+    "matches": ["https://maitri.bmu.edu.in/*"]
+  }
+]
+
+
+}

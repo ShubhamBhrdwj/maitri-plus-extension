@@ -1,0 +1,17 @@
+#maitri-plus-root {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 999999;
+}
+
+#maitri-plus-app {
+  background: #121421;
+  color: white;
+  margin: 40px auto;
+  max-width: 1200px;
+  height: 90%;
+  border-radius: 16px;
+  overflow: auto;
+  padding: 16px;
+}
