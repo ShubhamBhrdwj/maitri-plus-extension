@@ -21,7 +21,7 @@ console.log("Maitri+ dashboard loaded");
       <div id="mp-app">
         <header class="mp-top">
           <div class="mp-left">
-            <div class="mp-brand"><h1>Maitri+</h1></div>
+            <div class="mp-brand"><a href="https://github.com/ShubhamBhrdwj/maitri-plus-extension" target="_blank" rel="noopener noreferrer"><h1>Maitri+</h1></a></div>
           </div>
           <div class="mp-right">
             <div class="mp-user">

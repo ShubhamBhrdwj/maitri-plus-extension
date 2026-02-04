@@ -51,9 +51,8 @@
 
 .mp-brand a>h1 {
   margin: 0;
-  font-size: 120px;
+  font-size: 20px;
   font-weight: bolder;
-  cursor: pointer;
 }
 
 .mp-brand span {
