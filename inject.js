@@ -109,8 +109,7 @@ console.log("Maitri+ dashboard loaded");
   /* ---------- Core Logic ---------- */
   async function initLogic() {
     const profile = (await fetchJSON("/stu_getStudentPersonalinfo.json"))[0];
-    document.getElementById("mp-name").innerText =
-      `${profile.firstName} ${profile.lastName}`;
+    document.getElementById("mp-name").innerText = `${profile.firstName} ${profile.lastName}`;
     document.getElementById("mp-roll").innerText = profile.rollNo;
 
     const semEl = document.getElementById("mp-sem");
